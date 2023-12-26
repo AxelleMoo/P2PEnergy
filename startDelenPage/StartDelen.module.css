@@ -1,0 +1,19 @@
+.startDelen{
+    width: 100%;
+}
+
+.startDelen_box{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Form_box_btn{
+    margin: 4rem 0;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}

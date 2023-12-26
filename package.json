@@ -3,14 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "devFrontend": "next dev",
+    "dev": "nodemon server.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start: prod": "NODE_ENV=production nodemon server.js"
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.5",
+    "glob": "^10.3.10",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.0.4",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-dropzone": "^14.2.3",
+    "react-icons": "^4.12.0",
+    "slugify": "^1.6.6",
+    "validator": "^13.11.0",
+    "xss-clean": "^0.1.4"
   }
 }

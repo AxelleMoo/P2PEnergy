@@ -1,0 +1,52 @@
+
+
+.conOrProsument_type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 3rem;
+  }
+
+
+  .conOrProsument_type_box{
+    display: flex;
+    gap: 3rem;
+  }
+
+  
+  .conOrProsument_type_box_prosument,
+  .conOrProsument_type_box_consument {
+    width: 200px; 
+    margin-right:20px; 
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--background-color); 
+    transition: opacity 0.3s ease; 
+    text-align: center;
+  }
+
+  .selected{
+    background-color: var(--icons-light-color);
+  }
+  
+  .conOrProsument_type_box_prosument:hover,
+  .conOrProsument_type_box_consument:hover {
+    background-color: var(--icons-light-color);
+  }
+  
+  .conOrProsument_type_box_prosument img,
+  .conOrProsument_type_box_consument img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  
+
+  .conOrProsument_type_prosument h2,
+  .conOrProsument_type_consument h2 {
+    color: var(--icons-color)
+  }

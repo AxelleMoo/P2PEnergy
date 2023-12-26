@@ -1,0 +1,16 @@
+.dropzone{
+    width: 100%;
+    margin-block: 3rem;
+}
+
+.dropzone_box{
+    border: 5px dotted var(--icons-color);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.dropZone_box_input p{
+    line-height: 0;
+}
