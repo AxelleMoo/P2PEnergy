@@ -3,6 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import io
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from config.env
+load_dotenv('config.env')
 
 app = FastAPI()
 
