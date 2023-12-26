@@ -10,6 +10,7 @@ app = FastAPI()
 # origins = ["http://localhost", "http://localhost:3000"]  
 vm_ip = os.environ.get("VM_IP", "localhost")  # Use "localhost" as a default if VM_IP is not set
 origins = [f"http://{vm_ip}", f"http://{vm_ip}:3000"]
+print(origins)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

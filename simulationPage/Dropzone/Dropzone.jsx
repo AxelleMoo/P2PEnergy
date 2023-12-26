@@ -17,11 +17,12 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
     
         try {
           // Send the file to the server using the fetch API
-          const response = await fetch('http://127.0.0.1:8000/upload', {
+          const vmIp = process.env.VM_IP;
+
+          const response = await fetch(`http://${vmIp}/upload`, {
             method: 'POST',
             body: formData,
           });
-    
           if (response.ok) {
             // File uploaded successfully
             const data = await response.json();
