@@ -4,7 +4,7 @@ import Form from './Form/Form';
 import { ConOrProsument, Button } from '../components/componentsindex'
 import axios from 'axios'
 
-import Style from './startDelen.module.css'
+import Style from './StartDelen.module.css'
 
 const startDelen = () => {
   const [clientType, setClientType] = useState(null);
