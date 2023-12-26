@@ -16,14 +16,16 @@ process.on("uncaughtException", err =>{
 })
 
 dotenv.config({path: "./config.env"})
-const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSWORD)
+const DB = process.env.DATABASE.replace("<PASSWORD>", encodeURIComponent(process.env.DATABASE_PASSWORD))
+console.log(DB)
 
 mongoose.connect(DB, {
     useNewUrlParser: true,
 }).then((con)=> {
-    // console.log(con.connection);
-    console.log("DB Connection Succesfully")
-})
+    console.log("DB Connection Successfully");
+}).catch((error) => {
+    console.error("Error connecting to MongoDB:", error);
+});
 
 
 const port = process.env.PORT || 3000;
