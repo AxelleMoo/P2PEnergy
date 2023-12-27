@@ -24,7 +24,7 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
           // console.log(process.env);
 
           const vmIp = "34.79.250.28";
-          const response = await fetch(`http://${vmIp}:3000/upload`, {
+          const response = await fetch(`http://${vmIp}:8000/upload`, {
             method: 'POST',
             body: formData,
           });
