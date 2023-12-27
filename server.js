@@ -16,8 +16,8 @@ process.on("uncaughtException", err =>{
 })
 
 dotenv.config({path: "./config.env"})
+console.log(process.env.VM_IP)
 const DB = process.env.DATABASE.replace("<PASSWORD>", encodeURIComponent(process.env.DATABASE_PASSWORD))
-console.log(DB)
 
 mongoose.connect(DB, {
     useNewUrlParser: true,

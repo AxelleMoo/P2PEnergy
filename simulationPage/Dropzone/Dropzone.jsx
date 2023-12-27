@@ -3,6 +3,7 @@ import {useDropzone} from 'react-dropzone'
 import Style from './Dropzone.module.css'
 
 
+
 const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) => {
     // console.log(selectedContract)
     const onDrop = useCallback(async (acceptedFiles) => {
@@ -17,8 +18,12 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
     
         try {
           // Send the file to the server using the fetch API
-          const vmIp = process.env.VM_IP;
 
+          //Does not work because env not avaible for client
+          // const vmIp = process.env.VM_IP;
+          // console.log(process.env);
+
+          const vmIp = "34.79.250.28";
           const response = await fetch(`http://${vmIp}/upload`, {
             method: 'POST',
             body: formData,
