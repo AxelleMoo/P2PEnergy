@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Style from '../styles/overons.module.css'
+import Style from '../styles/overOns.module.css'
 import images from "../img"
 
 
