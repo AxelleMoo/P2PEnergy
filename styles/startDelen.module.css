@@ -10,11 +10,16 @@
 
 .startDelen_info h1{
     font-size: 4rem;
-    line-height: .5;
+    line-height: .8;
 }
 
 .startDelen_info p{
     font-size: 1.1rem;
     line-height: 1.2;
     padding-bottom: .5rem;
+}
+
+.startDelen_box{
+    width: 50%;
+    margin: 0 auto;
 }

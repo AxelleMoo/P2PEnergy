@@ -6,5 +6,6 @@ import Footer from "./Footer/Footer";
 import Stappenplan from "./Stappenplan/Stappenplan";
 import HeroSection from "./HeroSection/HeroSection";
 import ConOrProsument from "./ConOrProsument/ConOrProsument";
+import ProviderOptions from "./ProviderOptions/ProviderOptions";
 
-export {Button, Title, NavBar, Info, Footer, Stappenplan, HeroSection, ConOrProsument}
+export {Button, Title, NavBar, Info, Footer, Stappenplan, HeroSection, ConOrProsument, ProviderOptions}

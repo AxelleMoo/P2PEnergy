@@ -40,9 +40,18 @@ const userSchema = new mongoose.Schema({
             message: "Wachtwoord is niet hetzelfde"
         },
     },
-    bankingAccount:{
+    bankAccount:{
         type: String,
         validate: [validator.isIBAN, "Dit is geen geldig IBAN nummer"]
+    },
+    eanCode:{
+        type: String,
+    },
+    provider:{
+        type: String,
+    },
+    contract:{
+        type: String,
     },
     passwordChangedAt: Date,
     passwordResetToken: String,

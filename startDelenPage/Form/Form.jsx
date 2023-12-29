@@ -1,13 +1,14 @@
 
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
+import { MdOutlineElectricMeter } from "react-icons/md";
 import { CiBank } from "react-icons/ci";
 
 
 //INTERNAL IMPORT
 import Style from "./Form.module.css";
 
-const Form = ({formData, setFormData}) => {
+const Form = ({formData, setFormData, clientType}) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevFormData => ({
@@ -80,8 +81,8 @@ const Form = ({formData, setFormData}) => {
                 </div>
                 
             </div>
-
-            <div className={Style.Form_box_input}>
+            {clientType == 'prosument' &&
+              <div className={Style.Form_box_input}>
                 <label htmlFor="bankAccount">Bankrekeningnummer</label>
                 <div className={Style.Form_box_input_box}>
                 <div className={Style.Form_box_input_box_icon}>
@@ -92,6 +93,22 @@ const Form = ({formData, setFormData}) => {
                   placeholder='BE12 1234 1234 1234'
                   name="bankAccount"
                   value={formData.bankAccount}
+                  onChange={handleChange}/>
+                </div>
+              </div>
+            }
+            
+            <div className={Style.Form_box_input}>
+                <label htmlFor="ean">EAN-code</label>
+                <div className={Style.Form_box_input_box}>
+                <div className={Style.Form_box_input_box_icon}>
+                  <MdOutlineElectricMeter />
+                </div>
+                <input 
+                  type="text" 
+                  placeholder='EAN541'
+                  name="eanCode"
+                  value={formData.eanCode}
                   onChange={handleChange}/>
                 </div>
             </div>

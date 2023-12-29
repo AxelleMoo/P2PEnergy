@@ -1,0 +1,32 @@
+
+
+.providerOptions_dropdown{
+    margin-bottom: 20px;
+}
+
+.providerOptions_dropdown_box{
+    margin-top: 2rem;
+}
+
+.providerOptions_dropdown_box label{
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+.providerOptions_dropdown_box_select{
+    width: 100%;
+    border: 1px solid var(--icons-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    margin-top: .5rem;
+    outline: none;
+}
+
+.providerOptions_dropdown_box_option{
+    color: var(--icons-color);
+}

@@ -38,10 +38,11 @@
   
   .conOrProsument_type_box_prosument img,
   .conOrProsument_type_box_consument img {
-    width: 100%; /* Make the image fill the container */
+    width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
+    padding-bottom: 1rem;
   }
 
   
@@ -49,4 +50,17 @@
   .conOrProsument_type_prosument h2,
   .conOrProsument_type_consument h2 {
     color: var(--icons-color)
+  }
+
+  .circleIndicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--icons-light-color); /* or any color you prefer */
+    margin: 10px auto; /* centers the circle */
+  }
+  
+  .circleIndicator.selected {
+    background-color: var(--icons-color); /* or any color you prefer */
   }
