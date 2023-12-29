@@ -8,7 +8,11 @@ const index = () => {
     <div>
       <HeroSection/>
       <Info/>
-      <Title heading="Hoe werkt het?" paragraph="Het hele proces is zo makkelijk mogelijk gemaakt voor jou. In slechts 4 stappen ben je al aan het genieten van een voordelige elektriciteitsrekening. Bovendien kan je altijd na elke stap in het proces stoppen."/>
+      <Title heading="Hoe werkt het?" 
+        paragraph="Het gehele proces is vereenvoudigd voor jouw gemak. 
+        In slechts vier eenvoudige stappen ben je al op weg naar het profiteren van 
+        een voordelige elektriciteitsrekening. Bovendien heb je de flexibiliteit om op 
+        elk moment in het proces te stoppen."/>
       <Stappenplan/>
     </div>
   )

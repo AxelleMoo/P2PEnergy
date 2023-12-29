@@ -14,7 +14,7 @@ import fillInfo from './fillInfo.png'
 import prosument from './prosument.png'
 import consument from './consument.png'
 import consument1 from './consument1.png'
-import pfaxelle from './pfaxelle.jpeg'
+import pfaxelle from './pfAxelle.jpeg'
 import pftom from './pfTom.jpg'
 import okconcept from './okConcept.png'
 
