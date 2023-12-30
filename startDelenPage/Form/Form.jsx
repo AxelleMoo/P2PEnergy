@@ -100,10 +100,14 @@ const Form = ({formData, setFormData, clientType}) => {
             
             <div className={Style.Form_box_input}>
                 <label htmlFor="ean">EAN-code</label>
-                <div className={Style.Form_box_input_box}>
-                <div className={Style.Form_box_input_box_icon}>
-                  <MdOutlineElectricMeter />
+                <span className={Style.Form_box_input_info_icon}>i</span>
+                <div className={Style.Form_box_input_info_tooltip}>
+                    De EAN-code is de code van je elektriciteitsmeter. De code staat op jouw meter of jouw energiefactuur en begint met EAN541.
                 </div>
+                <div className={Style.Form_box_input_box}>
+                  <div className={Style.Form_box_input_box_icon}>
+                    <MdOutlineElectricMeter />
+                  </div>
                 <input 
                   type="text" 
                   placeholder='EAN541'

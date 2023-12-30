@@ -1,11 +1,13 @@
 import React, {useCallback, useState, useEffect} from 'react'
 import {useDropzone} from 'react-dropzone'
 import Style from './Dropzone.module.css'
+import { Loader } from '../../components/componentsindex'
 
 
 
-const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) => {
-    // console.log(selectedContract)
+const Dropzone = ({title, selectedProvider, selectedContract}) => {
+    const [loading, setLoading] = useState(false);
+    const [totalSavings, setTotalSavings] = useState(null);
     const onDrop = useCallback(async (acceptedFiles) => {
         const file = acceptedFiles[0];
     
@@ -17,7 +19,7 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
         formData.append('selectedContract', selectedContract);
     
         try {
-          // Send the file to the server using the fetch API
+          setLoading(true);
 
           //Does not work because env not avaible for client
           // const vmIp = process.env.VM_IP;
@@ -40,8 +42,10 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
           }
         } catch (error) {
           console.error('Error:', error.message);
+        } finally {
+          setLoading(false);
         }
-      }, [selectedContract, selectedProvider]);
+      }, [selectedContract, selectedProvider, setTotalSavings]);
     
     const { getRootProps, getInputProps } = useDropzone({
         onDrop
@@ -56,7 +60,16 @@ const Dropzone = ({title, selectedProvider, selectedContract, setTotalSavings}) 
             </div>
         </div>
 
+        {loading && (
+          <Loader/>
+        )}
         
+
+        {totalSavings && !loading && (
+            <div className={Style.dropzone_savings}>
+             <h2>Jouw gesimuleerde besparing over één jaar bedraagt: </h2>
+             <h1>{totalSavings.toFixed(2)} euro</h1>
+            </div>)}
 
     </div>
   )

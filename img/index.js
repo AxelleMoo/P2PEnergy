@@ -17,8 +17,10 @@ import consument1 from './consument1.png'
 import pfaxelle from './pfAxelle.jpeg'
 import pftom from './pfTom.jpg'
 import okconcept from './okConcept.png'
+import loadergif from './loadergif.gif'
 
 export default{
+    loadergif,
     pftom,
     okconcept,
     pfaxelle,

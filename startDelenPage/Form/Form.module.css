@@ -9,11 +9,43 @@
 }
 
 .Form_box_input label{
-    display: block;
-    width: 100%;
     margin-left: 1rem;
     font-weight: 700;
     font-size: 1.3rem;
+}
+
+.Form_box_input_info_icon{
+    display: inline-block;
+    margin-left: 0.2rem;
+    width: 19px;
+    height: 19px;
+    background-color: var(--icons-color); /* Set your preferred background color */
+    color: var(--main-bg-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Form_box_input_info_tooltip{
+    visibility: hidden;
+    width: 32rem;
+    background-color: var(--icons-color); /* Set your preferred background color */
+    color:var(--main-bg-color);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    top: 92%;
+    left: 32%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s;
+}
+
+.Form_box_input:hover .Form_box_input_info_tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 .Form_box_input_userName{

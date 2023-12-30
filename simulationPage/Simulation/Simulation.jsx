@@ -81,12 +81,7 @@ const Simulation = () => {
         </div>
       )}
 
-    <Dropzone title="UPLOAD JOUW KWARTIERWAARDEN (.csv bestand)" selectedProvider={selectedProvider} selectedContract={selectedContract} setTotalSavings={setTotalSavings}/>
-    {totalSavings &&
-            <div className={Style.dropzone_savings}>
-             <h2>Jouw gesimuleerde besparing over één jaar bedraagt: </h2>
-             <h1>{totalSavings.toFixed(2)} euro</h1>
-            </div>}
+    <Dropzone title="UPLOAD JOUW KWARTIERWAARDEN (.csv bestand)" selectedProvider={selectedProvider} selectedContract={selectedContract}/>
     </div>
   );
 };

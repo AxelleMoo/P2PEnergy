@@ -52,6 +52,7 @@
 }
 
 .aboutus_box_founder_box{
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -66,7 +67,7 @@
 
 .aboutus_box_founder_box_img_img{
     border-radius: 1rem;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
 }
 
