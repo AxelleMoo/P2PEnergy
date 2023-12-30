@@ -21,6 +21,21 @@ const NavBar = () => {
 
             <div className={Style.navbar_container_right}>
                 <div className={Style.navbar_container_right_about}>
+                    <Link href={{pathname:`./`}}>
+                        Home
+                    </Link>
+                </div>
+                <div className={Style.navbar_container_right_about}>
+                    <Link href={{pathname:`energiedelen`}}>
+                        Energiedelen
+                    </Link>
+                </div>
+                <div className={Style.navbar_container_right_about}>
+                    <Link href={{pathname:`quick-scan`}}>
+                        Quick Scan
+                    </Link>
+                </div>
+                <div className={Style.navbar_container_right_about}>
                     <Link href={{pathname:`over-ons`}}>
                         Over ons
                     </Link>

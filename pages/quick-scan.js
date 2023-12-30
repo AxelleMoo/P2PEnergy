@@ -3,7 +3,7 @@ import React from 'react'
 import { Button, Title } from '../components/componentsindex';
 import { Simulation } from '../simulationPage/simulationIndex';
 
-const index = () => {
+const scan = () => {
   return (
     <div>
       <Title heading="Simuleer jouw besparing" paragraph="Simuleer wat jij afgelopen jaar zou hebben uitgespaard met het gebruik van 
@@ -15,4 +15,4 @@ const index = () => {
   )
 }
 
-export default index
+export default scan

@@ -1,0 +1,21 @@
+.step3{
+    width: 100%;
+}
+
+.step3_box{
+    width: 50%;
+    margin:  0 auto;
+    border-bottom: 1px solid var(--shadow-dark-color);
+}
+
+.step3 h1{
+    font-size: 2rem;
+    line-height: .8;
+}
+
+.step3 p{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding-bottom: .5rem;
+}
+

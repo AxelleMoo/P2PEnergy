@@ -81,21 +81,103 @@ const Form = ({formData, setFormData, clientType}) => {
                 </div>
                 
             </div>
-            {clientType == 'prosument' &&
-              <div className={Style.Form_box_input}>
-                <label htmlFor="bankAccount">Bankrekeningnummer</label>
-                <div className={Style.Form_box_input_box}>
-                <div className={Style.Form_box_input_box_icon}>
-                    <CiBank />
+            {clientType == 'consument' &&
+              <div>
+                <div className={Style.Form_box_input}>
+                  <label htmlFor="btw">BTW-nummer</label>
+                  
+                  <input 
+                    type="text"
+                    name="btw"
+                    value={formData.btw}
+                    onChange={handleChange} 
+                    className={Style.Form_box_input_userName}/>
                 </div>
-                <input 
-                  type="text" 
-                  placeholder='BE12 1234 1234 1234'
-                  name="bankAccount"
-                  value={formData.bankAccount}
-                  onChange={handleChange}/>
+
+                <div className={Style.Form_box_input}>
+                  <label htmlFor="street">Straat</label>
+                  <input 
+                    type="text"
+                    name="street"
+                    value={formData.street}
+                    onChange={handleChange} 
+                    className={Style.Form_box_input_userName}/>
                 </div>
+
+                <div className={Style.Form_box_input_triple}>
+                  <div className={Style.Form_box_input}>
+                  <label htmlFor="housenumber">Huisnummer</label>
+                  <input
+                      type="text"
+                      name="housenumber"
+                      value={formData.housenumber}
+                      onChange={handleChange}
+                      className={Style.Form_box_input_userName}
+                      />
+                  </div>
+                  <div className={Style.Form_box_input}>
+                  <label htmlFor="addition">Toevoeging</label>
+                      <input
+                      type="text"
+                      name="addition"
+                      value={formData.addition}
+                      onChange={handleChange}
+                      className={Style.Form_box_input_userName}
+                      />
+                  </div>
+                  <div className={Style.Form_box_input}>
+                  <label htmlFor="bus">Bus</label>
+                      <input
+                      type="text"
+                      name="bus"
+                      value={formData.bus}
+                      onChange={handleChange}
+                      className={Style.Form_box_input_userName}
+                      />
+                  </div>
+                </div>
+
+                <div className={Style.Form_box_input_double}>
+                  <div className={Style.Form_box_input}>
+                  <label htmlFor="place">Plaats</label>
+                  <input
+                      type="text"
+                      name="place"
+                      value={formData.place}
+                      onChange={handleChange}
+                      className={Style.Form_box_input_userName}
+                      />
+                  </div>
+                  <div className={Style.Form_box_input}>
+                  <label htmlFor="zip">Postcode</label>
+                      <input
+                      type="text"
+                      name="zip"
+                      value={formData.zip}
+                      onChange={handleChange}
+                      className={Style.Form_box_input_userName}
+                      />
+                  </div>
+                  
+                </div>
+
               </div>
+              
+
+              // <div className={Style.Form_box_input}>
+              //   <label htmlFor="bankAccount">Bankrekeningnummer</label>
+              //   <div className={Style.Form_box_input_box}>
+              //   <div className={Style.Form_box_input_box_icon}>
+              //       <CiBank />
+              //   </div>
+              //   <input 
+              //     type="text" 
+              //     placeholder='BE12 1234 1234 1234'
+              //     name="bankAccount"
+              //     value={formData.bankAccount}
+              //     onChange={handleChange}/>
+              //   </div>
+              // </div>
             }
             
             <div className={Style.Form_box_input}>

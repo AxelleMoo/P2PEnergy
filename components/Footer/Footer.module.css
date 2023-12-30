@@ -1,9 +1,8 @@
 
 .footer{
     width: 100%;
-    position: relative;
+    bottom: 0;
     border-top: 1px solid var(--shadow-dark-color); 
-    
 }
 
 .footer_box{

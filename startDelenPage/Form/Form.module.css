@@ -6,6 +6,7 @@
 
 .Form_box_input{
     margin-top: 2rem;
+    position: relative;
 }
 
 .Form_box_input label{
@@ -25,7 +26,7 @@
     text-align: center;
     line-height: 20px;
     cursor: pointer;
-    position: relative;
+    
 }
 
 .Form_box_input_info_tooltip{
@@ -35,9 +36,9 @@
     color:var(--main-bg-color);
     border-radius: 5px;
     padding: 10px;
+    left: 14%;
+    bottom: 80%;
     z-index: 1;
-    top: 92%;
-    left: 32%;
     opacity: 0;
     position: absolute;
     transition: opacity 0.3s;

@@ -53,6 +53,13 @@ const userSchema = new mongoose.Schema({
     contract:{
         type: String,
     },
+    btw: String,
+    street: String,
+    housnumber: String,
+    addidtion: String,
+    bus: String,
+    place: String,
+    zip: String,
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,

@@ -8,5 +8,6 @@ import HeroSection from "./HeroSection/HeroSection";
 import ConOrProsument from "./ConOrProsument/ConOrProsument";
 import ProviderOptions from "./ProviderOptions/ProviderOptions";
 import Loader from "./Loader/Loader";
+import MultistepProgressBar from "./MultistepProgressBar/MultistepProgressBar";
 
-export {Button, Title, NavBar, Info, Footer, Stappenplan, HeroSection, ConOrProsument, ProviderOptions, Loader}
+export {Button, Title, NavBar, Info, Footer, Stappenplan, HeroSection, ConOrProsument, ProviderOptions, Loader, MultistepProgressBar}

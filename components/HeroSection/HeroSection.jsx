@@ -14,9 +14,9 @@ const HeroSection = () => {
     <div className={Style.heroSection}>
         <div className={Style.heroSection_box}>
             <div className={Style.heroSection_box_left}>
-                <h1>Persoon-aan-Persoon verkoop</h1>
-                <p>Verkoop je energie aan iemand in de buurt en help samen de gemeente groen te maken.</p>
-                <Button btnName='Simuleer mijn winst' handleClick={() => router.push("/simuleer")}/>
+                <h1>Groen Rendement, Simpel Gedeeld</h1>
+                <p>Laat jouw energie voor je werken – Groen en winstgevend</p>
+                <Button btnName='Quick Scan' handleClick={() => router.push("/quick-scan")}/>
             </div>
             <div className={Style.heroSection_box_right}>
                 <Image
