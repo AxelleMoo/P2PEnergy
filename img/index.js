@@ -3,8 +3,6 @@ import voltex from './voltex.png'
 import decentralisatie from './decentralisatie.jpg'
 import duurzaamheid from './duurzaamheid.jpg'
 import energiedelen from './energiedelen.jpg'
-import energyconcept from './energyconcept.png'
-import ecologyconcept from './ecologyconcept.png'
 import financialData from './financialData.png'
 import dataconcept from './dataconcept.png'
 import click from './click.png'
@@ -18,8 +16,28 @@ import pfaxelle from './pfAxelle.jpeg'
 import pftom from './pfTom.jpg'
 import okconcept from './okConcept.png'
 import loadergif from './loadergif.gif'
+import oneToOne from './one-to-one.png'
+import manyToOne from './many-to-one.png'
+import oneToMany from './one-to-many.png'
+import apartment from './apartment.png'
+import selfsharing from './selfSharing.png'
+import community from './community.png'
+import exampleconcept from './exampleconcept.png'
+import billConsument from './billConsument.png'
+import billProsument from './billProsument.png'
+import manytosupermarket from './many-to-supermarket.png'
 
 export default{
+    manytosupermarket,
+    billConsument,
+    billProsument,
+    exampleconcept,
+    apartment,
+    selfsharing,
+    community,
+    oneToOne,
+    manyToOne,
+    oneToMany,
     loadergif,
     pftom,
     okconcept,
@@ -36,8 +54,6 @@ export default{
     decentralisatie,
     duurzaamheid,
     energiedelen,
-    energyconcept,
-    ecologyconcept,
     financialData,
     dataconcept
 }

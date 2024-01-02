@@ -1,0 +1,58 @@
+
+.legislation_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 7rem;
+}
+
+.legislation_box_energiedelen{
+    border:  1px solid var(--icons-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    transition:  all .3s ease-in;
+    cursor: pointer;
+}
+
+.legislation_box_energiedelen_small{
+    position: absolute;
+    right: 3rem;
+    font-size: 1.2rem;
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.legislation_box_energiedelen:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.legislation_box_energiedelen_span{
+    font-size: 2rem;
+    font-weight: 900;
+    
+}
+
+
+.legislation_box_energiedelen_info{
+    margin: 4rem 0;
+}
+
+.legislation_box_energiedelen_info_para{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.legislation_box_energiedelen_info_box_img{
+    margin-left: 3rem;
+}
+
+.legislation_box_energiedelen_info_box_img_img{
+    object-fit: cover;
+}
