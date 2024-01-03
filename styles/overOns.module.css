@@ -52,7 +52,7 @@
 }
 
 .aboutus_box_founder_box{
-    width: 50%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -72,12 +72,12 @@
 }
 
 .aboutus_box_founder_box_img h3{
-    line-height: 0;
+    line-height: 1;
     font-size: 2rem;
 }
 
 .aboutus_box_founder_box_img p{
-    line-height: 0;
+    line-height: 1;
     font-size: 1.2rem;
 }
 
@@ -102,6 +102,7 @@
     }
 
     .aboutus_box_founder_box{
+        width: 100%;
         grid-template-columns: 1fr;
     }
 
@@ -125,6 +126,7 @@
     }
 
     .aboutus_box_founder_box{
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 4rem;
     }

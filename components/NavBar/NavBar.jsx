@@ -1,15 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import {CgMenuRight} from 'react-icons/cg';
+
 
 
 import Style from './NavBar.module.css'
 import images from '../../img'
 import { Button } from '../componentsindex'
+import Sidebar from './Sidebar/Sidebar';
 
 const NavBar = () => {
+    const [openSideMenu, setOpenSideMenu] = useState(false);
+
+
     const router = useRouter();
+
+
+    const openSideBar = () => {
+        if(!openSideMenu){
+          setOpenSideMenu(true)
+        } else{
+          setOpenSideMenu(false);
+        }
+      }
   return (
     <div className={Style.navbar}>
         <div className={Style.navbar_container}>
@@ -43,8 +58,20 @@ const NavBar = () => {
                 <div className={Style.navbar_container_right_button}>
                     <Button btnName="Start met energiedelen" handleClick={() => router.push("/start-delen")}/>
                 </div>
+
+                <div className={Style.navbar_container_right_menuBtn}>
+                    <CgMenuRight className={Style.menuIcon} onClick={() => openSideBar()}/>
+                </div>
             </div>
         </div>
+
+        {
+        openSideMenu && (
+          <div className={Style.sideBar}>
+            <Sidebar/>
+          </div>
+        )
+      }
     </div>
   )
 }

@@ -44,7 +44,8 @@
 
 .concept_bill {
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content:center; 
     gap: 6rem;
     margin-left: auto;
@@ -61,16 +62,26 @@
     .concept_box_right h2{
         font-size: 2rem;
     }
+
+    .concept_bill{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
     .concept_box{
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 4rem;
     }
 
     .concept_box_right h2{
         font-size: 2rem;
+    }
+
+    .concept_bill{
+        grid-template-columns: 1fr;
+        gap: 4rem;
     }
 }

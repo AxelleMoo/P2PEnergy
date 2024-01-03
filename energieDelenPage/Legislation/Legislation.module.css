@@ -56,3 +56,16 @@
 .legislation_box_energiedelen_info_box_img_img{
     object-fit: cover;
 }
+
+@media screen and (max-width:35em){
+    .legislation{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 55em) {
+    .legislation_box{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

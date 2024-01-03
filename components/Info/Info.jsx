@@ -35,7 +35,6 @@ const Info = () => {
                 </div>
             </div>
             
-        
             <div className={Style.info_box_box}>
                 {infoArray.map((el,i) => (
                     <div className={Style.info_box_box_box}>
