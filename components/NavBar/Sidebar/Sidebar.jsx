@@ -14,15 +14,15 @@ const Sidebar = () => {
         link: "energiedelen"
     },
     {
-        name: "QuickScan",
+        name: "Quick scan",
         link: "quick-scan"
     },
     {
-        name: "OverOns",
+        name: "Over ons",
         link: "over-ons"
     },
     {
-        name: "StartDelen",
+        name: "Start delen",
         link: "start-delen"
     }
   ]
