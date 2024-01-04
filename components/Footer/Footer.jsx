@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className={Style.subscibe}>
+        {/* <div className={Style.subscibe}>
           <h3>Subscribe</h3>
           <div className={Style.subscribe_box}>
             <input type='email' placeholder='Enter you email *'/>
@@ -45,6 +45,17 @@ const Footer = () => {
           <div className={Style.subscribe_box_info}>
             <p>Schrijf je in voor het allerlaatste nieuws over energiedelen en kom als eerste onze nieuwe features te weten.</p>
           </div>
+        </div> */}
+        <div className={Style.contact}>
+            <div className={Style.contact_box}>
+              <h1>Contacteer ons: </h1>
+              <p>
+                0484/93.21.22
+                <br/>
+                <br/>
+                moortgat.axelle@gmail.com
+              </p>
+            </div>
         </div>
       </div>
     </div>
