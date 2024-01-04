@@ -3,10 +3,20 @@ import React, {useState} from 'react'
 import Style from './ProviderOptions.module.css'
 
 const ProviderOptions = ({ updateFormData }) => {
-    const energyProviders = ['Engie', 'Eneco']; // Replace with your actual providers
+    const energyProviders = ['Engie', 'Eneco', 'Luminus', 'Frank', 'OctaPlus', 'Mega', 'Bolt', 'Energiebe', 'Trevion', 'TotalEnergies', 'Dats24', 'Andere']; // Replace with your actual providers
     const contractOptions = {
       Engie: ['Engie FLOW variabel', 'Engie DIRECT variabel', 'Engie EASY vast', 'Engie EASY variabel', 'Engie DRIVE vast'],
       Eneco: ['Eneco zon & wind flex', 'Eneco zon & wind vast'],
+      Luminus: ['BasicFlex', 'ComfyFlex', 'BasicFix', 'ComfyFlex+', 'Comfy Shine', 'Comfy', 'Comfy+', 'Optimal', 'Actief+'],
+      Frank: ['Frank Energie variabel'],
+      Mega: ['Prepaid Flex', 'Online Flex', 'Smart Green Flex'],
+      Bolt: ['Bolt Variabel Go', 'Bolt Variabel Online', 'Bolt Variabel'],
+      Energiebe: ['Variable', 'Vast'],
+      Trevion: ['Groene energie full spot'],
+      TotalEnergies: ['Pixel', 'eMobility', 'Pixel Blue Variable', 'Pixel Blue Fixed'],
+      Dats24: ['Elektriciteit Groen Variabel'],
+      OctaPlus: ['Clear', 'Smart Variabel', 'Eco Clear', 'Fixed'],
+      Andere: ['Andere', 'Ik weet het niet']
     }; 
   
     const [selectedProvider, setSelectedProvider] = useState(null);
