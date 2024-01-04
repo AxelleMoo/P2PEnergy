@@ -95,7 +95,7 @@ const Step1 = ({onNextStep}) => {
       })
 
       if (res.data.status === "success"){
-        setAccountCreated(true);
+        // setAccountCreated(true);
         if (startDelenBoxRef.current) {
           startDelenBoxRef.current.style.display = 'none';
         }
