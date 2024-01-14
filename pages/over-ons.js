@@ -33,7 +33,7 @@ const overOns = () => {
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
-            <Image src={images.okconcept} className={Style.aboutus_box_hero_right_img}/>
+            <Image src={images.about} className={Style.aboutus_box_hero_right_img}/>
           </div>
         </div>
 

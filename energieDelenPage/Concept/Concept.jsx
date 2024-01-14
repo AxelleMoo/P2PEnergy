@@ -32,7 +32,7 @@ const Concept = () => {
                 </p>
             </div>
             <div className={Style.concept_box_left}>
-                <Image className={Style.concept_box_left_img} src={images.exampleconcept} alt="example concept" width={600} height={470}/>
+                <Image className={Style.concept_box_left_img} src={images.providerconcept} alt="example concept" width={600} height={470}/>
             </div>
         
             

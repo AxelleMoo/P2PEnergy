@@ -22,16 +22,22 @@ import oneToMany from './one-to-many.png'
 import apartment from './apartment.png'
 import selfsharing from './selfSharing.png'
 import community from './community.png'
-import exampleconcept from './exampleConcept.png'
 import billConsument from './billConsument.png'
 import billProsument from './billProsument.png'
 import manytosupermarket from './many-to-supermarket.png'
+import about from './about.png'
+import home from './home.png'
+import providerconcept from './providerConcept.png'
+import voltexconcept from './VoltexConcept.png'
 
 export default{
+    about,
+    home,
+    providerconcept,
+    voltexconcept,
     manytosupermarket,
     billConsument,
     billProsument,
-    exampleconcept,
     apartment,
     selfsharing,
     community,

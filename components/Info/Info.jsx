@@ -27,7 +27,7 @@ const Info = () => {
         <div className={Style.info_box}>
             <div className={Style.info_box_voltex}>
                 <div className={Style.info_box_voltex_left}>
-                    <Image src={images.dataconcept} className={Style.info_box_voltex_left_img} width={500} height={500}/>
+                    <Image src={images.voltexconcept} className={Style.info_box_voltex_left_img} width={500} height={500}/>
                 </div>
                 <div className={Style.info_box_voltex_right}>
                     <h1>Wat is Voltex?</h1>
